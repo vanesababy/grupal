@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 55px;
+    padding: 130px;
+    background-image: url(/assets/images/autopista.png.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+h1{
+    background: rgba(33, 33, 176, 0.43);
+    /* width: 10px; */
+    text-align: center;
+    padding: 10px ;
+    width:1100px  ;
+    color: aliceblue;
+}
+
+
+
+
+.todo{
+    max-width: 1200px;
+    margin:auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;
+  
+    
+
+
+}
+.todo input[type="submit"]{
+    width: 90px;
+    padding: 20px;
+    border-radius: 20%;
+   border:none;
+   background: rgba(18, 18, 232, 0.612);
+   color: white;
+   cursor: pointer;
+}
+.todo input[type="submit"]:hover{
+    width: 90px;
+    padding: 20px;
+    border-radius: 20%;
+   border:none;
+   background: rgb(255, 255, 255);
+   color: rgb(0, 21, 248);
+   cursor: pointer;
+}
+
+.todo img{
+    
+  animation: movimiento 2.5s infinite ;
+    
+    width: 300px;
+    height: 230px;
+    position:relative;
+
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+  
+    
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+    
+}
+
+
+

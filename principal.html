@@ -1,0 +1,135 @@
+<?php
+  session_start();
+  if(!isset ($_SESSION['usuario'])){
+    echo'   
+        <script>
+           alert(" Por favor debes iniciar sesion");
+            window.location = "index.php"
+           </script>
+
+    ';
+    //header ("location: index.php");
+    die();
+    //session__destroy();
+    die();
+  }
+ // session__destroy(); ///para colocarle segur a la pagina principal y no ingresar por la barra de busqueda
+
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSPORT&GPS</title>
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="shortcut icon" href="assets/images/gps.png" type="image/x-icon">
+ 
+
+</head>
+<body>
+<header>
+        <div class="header__superior">
+          
+            </div>
+            <div class="search">
+                
+                <input type="search" placeholder=" Bienvenidos a TRANSPORT&GPS tu mejor aliado de ubicacion en transporte publico de la ciudad">
+            </div>
+        </div>
+
+        <div class="container__menu">
+
+        
+             
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#" id="selected"></a></li>
+                        <li><a  href="#">Servicios</a>
+                            <ul>
+                                <li><a href="http://127.0.0.1:5501/mapa.html">localizacion</a></li>
+                                <li><a href="http://127.0.0.1:5501/informacion.html">informacion</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li><a   href="http://127.0.0.1:5501/empresas.html">Empresas de rutas </a></li> 
+                            
+                        <li><a  href="http://127.0.0.1:5501/identidad.html">¿Quienes somos?</a></li>
+        
+                        <li><a href="http://127.0.0.1:5501/contactos.html">contactanos</a></li>
+
+                        <li><a href="/index.html">cerrar sesion </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+   
+
+    <main>
+
+
+   <!-- 
+
+        <article>
+            <h1>TRANSPORT&GPS</h1>
+            <h4>“Tu búsqueda ayuda, te ayuda, coopera y prospera”</h4>
+            <br>
+            <br>
+            <br>
+            <h2>MISIÓN</h2>
+            <p>Se busca orientar a las personas nuevas en la ciudad, que no tienen suficiente  conocimiento sobre las rutas en la localidad y así conseguir el máximo aprovechamiento del transporte público.</p>
+            <br>
+            <br>
+            <br>
+            <h2>VISIÓN</h2>
+            <p>Se plantea que para el año  2024, se busca crear un software innovador que sea accesible al público en general, el cual pueda brindarle información sobre las rutas al usuario en la ciudad.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </article>
+  -->
+
+  <section class="contenedor-sobre-nosotros" id="info">
+
+    <h2 class="titulo">CALIDAD Y PRIORIDAD</h2>
+    <div class="contenedor-sobre-nosotros">
+        <img src="/assets/images/autopista.png.jpg" width="37%" alt="" class="image-about-us">
+        <div class="contenido-textos">
+          <div class="cajacp">
+        <h3><span>1</span>MISION</h3>
+     <p>Buscamos orientar a las personas nuevas en la ciudad, que no tienen conocimiento
+    sobre las rutas en la localidad y así conseguir el máximo aprovechamiento al
+    transporte público.</p>
+           </div>
+    <br>
+            <div class="cajacp">
+        <h3><span>2</span>VISION</h3>
+     <p>Se plantea que en el transcurso del año 2022 al 2023, se busca crear un software
+       innovador que sea accesible al público en general, el cual pueda brindarle
+       información sobre las rutas al usuario en la ciudad.</p>
+    </div>
+    </div>
+    </div>
+    
+     </section>
+
+
+  
+    </main>
+  
+
+</body>
+</html>
